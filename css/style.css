@@ -1,0 +1,41 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-open-sans: 'Open Sans', sans-serif;
+
+  --fw-400: 400;
+  --fw-600: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+optgroup,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}

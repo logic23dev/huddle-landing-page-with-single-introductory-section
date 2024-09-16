@@ -23,19 +23,152 @@ video,
 canvas,
 svg {
   max-width: 100%;
+  height: auto;
   display: block;
-}
-
-input,
-button,
-optgroup,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
 }
 
 body {
   min-height: 100vh;
+  font-family: var(--ff-open-sans);
+  font-size: 1.125rem;
+  font-weight: var(--fw-400);
+  color: white;
+  background: var(--violet) url(../images/bg-desktop.svg) no-repeat;
+  background-size: contain;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  max-width: 70%;
+}
+
+.header {
+  margin-bottom: 6.25rem;
+}
+
+.header img {
+  width: 210px;
+}
+
+.main {
+  display: flex;
+  gap: 4.375rem;
+}
+
+.text h1 {
+  font-family: var(--ff-poppins);
+  font-size: 2.625rem;
+  font-weight: var(--fw-600);
+  margin-top: 2.5rem;
+}
+
+.text p {
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.reg-link {
+  display: block;
+  max-width: 35%;
+  text-align: center;
+  border-radius: 50px;
+  background-color: white;
+  text-decoration: none;
+  padding: 0.9375rem;
+  font-family: var(--ff-poppins);
+  color: var(--violet);
+  box-shadow: 2px 5px 10px 1px hsla(0, 0%, 0%, 0.3);
+  transition: 0.2s;
+}
+
+.reg-link:hover {
+  background-color: var(--soft-magenta);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.25rem;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: var(--violet) url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    max-width: 85%;
+  }
+
+  .header {
+    margin-bottom: 4.375rem;
+  }
+
+  .header img {
+    width: 150px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text h1 {
+    font-size: 1.75rem;
+    margin-top: 5rem;
+  }
+
+  .text p {
+    margin-top: 1.25rem;
+    margin-bottom: 2.1875rem;
+  }
+
+  .reg-link {
+    font-size: 0.875rem;
+    min-width: 70%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.375rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+    padding: 0.3125rem;
+  }
 }

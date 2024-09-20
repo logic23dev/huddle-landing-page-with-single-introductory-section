@@ -42,7 +42,8 @@ body {
 }
 
 .content-wrapper {
-  max-width: 70%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header {
@@ -55,7 +56,7 @@ body {
 
 .main {
   display: flex;
-  gap: 4.375rem;
+  gap: 3.9375rem;
 }
 
 .text h1 {
@@ -121,10 +122,6 @@ body {
     text-align: center;
   }
 
-  .content-wrapper {
-    max-width: 85%;
-  }
-
   .header {
     margin-bottom: 4.375rem;
   }
@@ -170,5 +167,12 @@ body {
   .social-links a {
     font-size: 1rem;
     padding: 0.3125rem;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .content-wrapper {
+    padding-left: 16%;
+    padding-right: 16%;
   }
 }
